@@ -38,12 +38,6 @@ void Cart::Forward() {
     _b2.Low();
 }
 
-void Cart::Left() {
-    _a1.Low();
-    _a2.Low();
-    _b1.Low();
-    _b2.High();
-}
 
 void Cart::Reverse() {
     _a1.Low();
@@ -53,24 +47,38 @@ void Cart::Reverse() {
 }
 
 void Cart::Right() {
-    _a1.High();
-    _a2.Low();
-    _b1.Low();
-    _b2.Low();
+    _a1.SetState(1);
+    _a2.SetState(1);
+    _b1.SetState(1);
+    _b2.SetState(0);
+}
+
+
+void Cart::Left() {
+    _a1.SetState(1);
+    _a2.SetState(0);
+    _b1.SetState(1);
+    _b2.SetState(1);
 }
 
 void Cart::Test() {
     int iDelay = 2000;
     
+    
+  
     Stop();
     Forward();
     delay(iDelay);
+    Stop();
     Reverse();
     delay(iDelay);
+    Stop();
     Left();
     delay(iDelay);
+    Stop();
     Right();
     delay(iDelay);
     Stop();
+  
 }
 

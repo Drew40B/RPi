@@ -32,6 +32,8 @@ CommandLineParser::CommandLineParser(int argc, char** argv) {
             _direction = Right;
         } else if (str == "Stop"){
             _direction = Stop;
+        } else if (str == "Test"){
+            _direction = Test;
         }
         
     }

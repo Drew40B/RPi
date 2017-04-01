@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 enum Directions{
-    Stop,Forward,Reverse,Left,Right,Unknown
+    Stop,Forward,Reverse,Left,Right,Unknown,Test
 };
 #endif /* DIRECTIONS_H */
 

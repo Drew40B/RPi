@@ -41,7 +41,14 @@ int main(int argc, char** argv) {
 
     CommandLineParser clp = CommandLineParser(argc,argv);
     Cart cart = Cart();
-    switch(clp.GetDirection()){
+    
+    cart.Stop();
+    delay(250);
+    
+    Directions dir = clp.GetDirection();
+   // dir = Test;
+    
+    switch(dir){
         case Forward:
             cart.Forward();
             printf("Forward \r\n");
@@ -58,6 +65,11 @@ int main(int argc, char** argv) {
             cart.Right();
             printf("Right \r\n");
             break;
+        case Test :
+             printf("Test \r\n");
+            cart.Test();
+            break;
+         
         default:
             cart.Stop();
             printf("Stop\r\n");

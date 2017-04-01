@@ -26,6 +26,7 @@ public:
     void High();
     void Low();
     int GetState();
+    void SetState(int State);
     
     virtual ~Pin();
 

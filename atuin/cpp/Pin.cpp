@@ -37,3 +37,7 @@ void Pin::Low(){
 int Pin::GetState(){
     return digitalRead(_pin);
 }
+
+void Pin::SetState(int State){
+    digitalWrite(_pin,State);
+}
