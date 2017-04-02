@@ -45,6 +45,9 @@
         <ccTool>
           <commandLine>-lwiringPi</commandLine>
         </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/atuin</output>
+        </linkerTool>
       </compileType>
       <item path="Cart.cpp" ex="false" tool="1" flavor2="0">
       </item>

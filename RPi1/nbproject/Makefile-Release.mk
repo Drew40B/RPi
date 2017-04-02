@@ -64,17 +64,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/rpi1: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/rpi1 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/LedPlay.o: LedPlay.cpp
+${OBJECTDIR}/LedPlay.o: LedPlay.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LedPlay.o LedPlay.cpp
 
-${OBJECTDIR}/SwitchPlay.o: SwitchPlay.cpp
+${OBJECTDIR}/SwitchPlay.o: SwitchPlay.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SwitchPlay.o SwitchPlay.cpp
 
-${OBJECTDIR}/main.o: main.cpp
+${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
@@ -85,6 +85,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/rpi1
 
 # Subprojects
 .clean-subprojects:

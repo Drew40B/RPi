@@ -32,7 +32,7 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    printf(" Robot\r\n");
+    printf("A'tuin\r\n");
 
     if (wiringPiSetupGpio() == -1)
         exit(1);
