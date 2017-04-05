@@ -23,7 +23,7 @@ function puts(error, stdout, stderr)
  
 function RobotDirection(req, res,dir)
 {
-	exec("/home/pi/nodejs/bin/atuin " + dir,puts);
+	exec("/home/pi/nodejs/atuin/bin/atuin " + dir,puts);
 	
 	res.writeHead(200, {'Content-Type': 'text/html'});
 	var html = "<html><head><body>";
@@ -48,7 +48,7 @@ dispatcher.onGet("/robot.html", function(req,res)
       
 });
 	
-exec("/home/pi/nodejs/bin/atuin Stop",puts);
+exec("/home/pi/nodejs/atuin/bin/atuin Stop",puts);
 
 
 // missing route or resource

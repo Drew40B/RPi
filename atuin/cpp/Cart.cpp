@@ -46,7 +46,7 @@ void Cart::Reverse() {
     _b2.High();
 }
 
-void Cart::Right() {
+void Cart::Left() {
     _a1.SetState(1);
     _a2.SetState(1);
     _b1.SetState(1);
@@ -54,7 +54,7 @@ void Cart::Right() {
 }
 
 
-void Cart::Left() {
+void Cart::Right() {
     _a1.SetState(1);
     _a2.SetState(0);
     _b1.SetState(1);

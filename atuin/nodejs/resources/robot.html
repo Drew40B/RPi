@@ -17,52 +17,7 @@
 </script>
 
 
-<style type="text/css">
-.myButton {
-   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-   box-shadow:inset 0px 1px 0px 0px #ffffff;
-   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
-   background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
-   background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
-   background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
-   background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
-   background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-   background-color:#ffffff;
-   -moz-border-radius:6px;
-   -webkit-border-radius:6px;
-   border-radius:6px;
-   border:1px solid #dcdcdc;
-   display:inline-block;
-   cursor:pointer;
-   color:#666666;
-   font-family:Arial;
-   font-size:15px;
-   font-weight:bold;
-   padding:6px 24px;
-   text-decoration:none;
-   text-shadow:0px 1px 0px #ffffff;
-        width: 130px;
-        height:30px;
-        margin:1px;
-}
-.myButton:hover {
-   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
-   background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
-   background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
-   background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
-   background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
-   background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-   background-color:#f6f6f6;
-        padding:6px 24px;
-}
-.myButton:active {
-   color:#ff0000;
-        position:relative;
-   top:1px;
-        padding:6px 24px;
-}
-</style>
+
 
 </head>
 <body>
@@ -70,12 +25,29 @@
 
 
 <center>
-<table>
-<tr><td colspan=3 align="center"><button class="myButton" onmousedown="direction('forward')" onmouseup="direction('stop')">Forward</button></td></tr>
-<tr><td><button class="myButton" type="button" onmousedown="direction('left')" onmouseup="direction('stop')">Left</button></td>
-<td><button class="myButton" type="button" onclick="direction('stop')">Stop</button></td>
-<td><button class="myButton" type="button" onmousedown="direction('right')" onmouseup="direction('stop')">Right</button></td></tr>
-<tr><td colspan=3 align="center"><button class="myButton" type="button" onmousedown="direction('reverse')" onmouseup="direction('stop')">Backward</button></td></tr>
+<table width="100%" style="background-coloc:red">
+<tr>
+	<td colspan=3 align="center">
+		<img src="Up.png" height="25%" onclick = "direction('forward')"/>
+	</td>
+</tr>
+<tr>
+
+	<td align="right">
+		<img src="Left.png" height="25%"   onclick = "direction('left')"/>
+	</td>
+	<td align = "center">
+		<img src="Stop.png" height="25%"  onclick = "direction('stop')"/>
+	</td>
+	<td align="left">
+		<img src="Right.png" height="25%" onclick = "direction('right')"/>
+	</td>
+</tr>
+<tr>
+	<td colspan=3 align="center">
+		<img src="Down.png" height="25%" onclick = "direction('reverse')"/>
+	</td>
+</tr>
 </table>
 </center>
 
