@@ -4,8 +4,16 @@
 <meta name="viewport" content = "height = device-height, width = 420, user-scalable = no" /> 
 <title>Robot Control</title>
 
+<style type="text/css">
+img
+{
+
+-webkit-touch-callout:none;
+}
+</style>
 
 <script type="text/javascript">
+   
    
     function direction(dir)
     {
@@ -20,32 +28,32 @@
 
 
 </head>
-<body>
-<center><h2>Robot Control Panel</h2></center><br>
+<body  >
+<center><h2>Robot Control Panel 4</h2></center><br>
 
 
 <center>
-<table width="100%" style="background-coloc:red">
+<table width = "75%">
 <tr>
 	<td colspan=3 align="center">
-		<img src="Up.png" height="25%" onclick = "direction('forward')"/>
+		<img   src="Up.png" height="25%" onmousedown = "direction('forward')" onmouseup = "direction('stop')">
 	</td>
 </tr>
 <tr>
 
 	<td align="right">
-		<img src="Left.png" height="25%"   onclick = "direction('left')"/>
+		<img src="Left.png" height="25%"   onmousedown = "direction('left')" onmouseup = "direction('stop')"/>
 	</td>
 	<td align = "center">
-		<img src="Stop.png" height="25%"  onclick = "direction('stop')"/>
+		<img src="Stop.png" height="25%"  onmousedown = "direction('stop')" onmouseup = "direction('stop')"/>
 	</td>
 	<td align="left">
-		<img src="Right.png" height="25%" onclick = "direction('right')"/>
+		<img src="Right.png" height="25%" onmousedown = "direction('right')" onmouseup = "direction('stop')"/>
 	</td>
 </tr>
 <tr>
 	<td colspan=3 align="center">
-		<img src="Down.png" height="25%" onclick = "direction('reverse')"/>
+		<img src="Down.png" height="25%" onmousedown = "direction('reverse')" onmouseup = "direction('stop')"/>
 	</td>
 </tr>
 </table>
